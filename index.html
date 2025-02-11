@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is an assignment on HTML for TechyJaunt"
+    />
+    <title>TechyJaunt HTML Assignment</title>
+    <style>
+      .introduction {
+        padding: 10px;
+      }
+      .introduction h1 {
+        color: rgb(36, 36, 127);
+      }
+      .introduction img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        float: right;
+        text-wrap: wrap;
+        margin-right: 50px;
+        margin: 25px 50px;
+      }
+      .external-link {
+        text-align: center;
+        padding: 10px;
+        background-color: #fff;
+        height: 200px;
+      }
+      .external-link h2 {
+        color: brown;
+        margin-bottom: 10px;
+      }
+      .form {
+        height: 400px;
+        background-color: azure;
+        padding: 10px;
+      }
+      .form h2 {
+        text-align: center;
+      }
+      input[type="text"],
+      textarea {
+        display: block;
+        margin: 10px;
+        width: 400px;
+        height: 20px;
+      }
+      textarea {
+        margin-bottom: 20px;
+        height: 100px;
+      }
+      .form button {
+        background-color: rgb(50, 42, 165);
+        color: aliceblue;
+        margin-left: 15px;
+        padding: 5px;
+        width: 70px;
+        border: none;
+        box-shadow: 3px 5px 5px 2px rgb(156, 70, 164);
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid rgb(155, 42, 165);
+      }
+      .form button:hover {
+        background-color: brown;
+      }
+      table {
+        margin-top: 40px;
+        margin-left: 25px;
+        height: 300px;
+        width: auto;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      #internal-link {
+        height: 400px;
+        background-color: aliceblue;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      p {
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------------------Introduction-------------------------------------->
+    <section
+      class="introduction"
+      style="background-color: bisque; height: 250px"
+    >
+      <img src="ceci.jpg" alt="A picture of me" />
+      <h1>Hi, I am Cecilia</h1>
+      <p>Frontend Development</p>
+      <p>I'm a Beginner with no experience</p>
+      <p>
+        I'm a budding front-end developer with a strong will to learn and build
+        amazing user experiences. I'm currentlyfocused on HTML and CSS. I'm
+        excited to connect and collaborate on future projects.
+      </p>
+      <p>Know more about me <a href="#internal-link">Here</a></p>
+    </section>
+    <!-----------------------------External link--------------------------------->
+    <section class="external-link">
+      <h2>How to navigate through tech</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores
+        est, nobis dolor unde voluptatibus cum ipsum quia hic autem,
+        exercitationem sed voluptatem! Officiis sequi earum, excepturi autem
+        quis dolor magnam dolore iusto id, assumenda debitis ad sunt alias
+        numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        minus voluptate ex libero sunt dicta exercitationem aperiam magnam
+        deserunt repellendus. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Illo eveniet temporibus, exercitationem porro ducimus modi quaerat
+        excepturi atque totam eligendi minima eos culpa quos adipisci, omnis,
+        unde consequuntur doloribus ipsam.
+        <a href="https://www.w3schools.com/" target="_blank"
+          >Learn more about tech</a
+        >
+      </p>
+    </section>
+    <!--------------------------Form------------------------------------>
+    <section class="form">
+      <h2>Survey Form</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Fill the form below</legend>
+          <label for="fullName">*Full Name:</label>
+          <input type="text" name="fullName" autocomplete="on" required />
+          <label for="email">*Email:</label>
+          <input type="text" name="email" autocomplete="on" required />
+          <label for="message">Type your message:</label>
+          <textarea name="message" id="message">Type your message</textarea>
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!----------------------------Table-------------------------------------->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Movie/Hobby</th>
+          <th>Reason Why I Like It</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spirited Away</td>
+          <td>
+            Beautiful animation, captivating story, and explores themes of
+            courage and identity.
+          </td>
+        </tr>
+        <tr>
+          <td>Coding/Programming</td>
+          <td>
+            I enjoy the challenge of problem-solving and the satisfaction of
+            building something new.
+          </td>
+        </tr>
+        <tr>
+          <td>Hiking</td>
+          <td>
+            It's a great way to connect with nature, get some exercise, and
+            clear my head.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-------------------------------About Me------------------------------------------>
+    <section id="internal-link">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim nulla,
+        officiis illo necessitatibus quidem velit impedit explicabo molestias in
+        voluptatem, magni dolore. Nam cumque laboriosam ut illo voluptas?
+        Eveniet!
+      </p>
+      <button><a href="./about.html">More about me</a></button>
+    </section>
+  </body>
+</html>
